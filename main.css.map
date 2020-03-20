@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "ACGA,oBAAoB;ACApB,oBAAoB;ACApB,oBAAoB;ACApB,oBAAoB",
+    "sources": [
+        "main.scss",
+        "resources/Sass/_base.scss",
+        "resources/Sass/_components.scss",
+        "resources/Sass/_layout.scss",
+        "resources/Sass/_navigation.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
