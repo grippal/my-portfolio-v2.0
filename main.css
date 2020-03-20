@@ -1,5 +1,197 @@
 /* STYLES GO HERE */
 /* STYLES GO HERE */
 /* STYLES GO HERE */
+body, html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  font-size: 12px;
+  height: 100vh;
+}
+
+body.home-page {
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 10% auto;
+      grid-template-rows: 10% auto;
+      grid-template-areas: "nav social" "hi mac";
+}
+
 /* STYLES GO HERE */
+header {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+ul.navigation {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: nav;
+  margin: 1rem 0rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+ul.navigation li {
+  margin: 1rem 1rem;
+  text-align: center;
+  font-family: raleway, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.1rem;
+  letter-spacing: 0.2rem;
+}
+
+ul.navigation li a {
+  color: #2F2F2F;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0.2rem 0.45rem 0.1rem 0.5rem;
+  text-decoration: none;
+}
+
+ul.navigation li a.selected {
+  color: white;
+  background-color: #2F2F2F;
+  border: 1px solid #2F2F2F;
+  border-radius: 5px;
+  padding: 0.2rem 0.45rem 0.1rem 0.5rem;
+}
+
+ul.navigation li a:hover {
+  color: white;
+  background-color: #2F2F2F;
+  border: 1px solid #2F2F2F;
+  border-radius: 5px;
+  padding: 0.2rem 0.45rem 0.1rem 0.5rem;
+}
+
+ul.social {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: social;
+  margin: 1rem 2rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+ul.social li {
+  margin: 1rem 1rem;
+}
+
+/* STYLES GO HERE */
+body.home-page div.home-background {
+  background-color: #1873C9;
+  -webkit-clip-path: polygon(100% 13%, 9% 100%, 100% 100%);
+          clip-path: polygon(100% 13%, 9% 100%, 100% 100%);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+body.home-page section.hi {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: hi;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body.home-page section.hi div.hi {
+  margin-left: 10rem;
+  font-family: itc-avant-garde-gothic-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4rem;
+  line-height: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body.home-page section.mac {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: mac;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body.home-page section.mac div.mac {
+  margin-right: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body.home-page section.mac div.mac img {
+  width: 25rem;
+  padding: 1rem;
+}
+
+body.home-page section.mac div.mac a {
+  font-family: raleway, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  color: #2F2F2F;
+  background-color: white;
+  border: 5px solid #2F2F2F;
+  border-radius: 5px;
+  padding: 0.4rem 3.5rem;
+  text-decoration: none;
+  -webkit-box-shadow: 2px 2px 5px grey;
+          box-shadow: 2px 2px 5px grey;
+}
+
+body.home-page section.mac div.mac a:hover {
+  color: white;
+  background-color: #2F2F2F;
+  border: 5px solid white;
+  border-radius: 5px;
+  padding: 0.4rem 3.5rem;
+  text-decoration: none;
+}
 /*# sourceMappingURL=main.css.map */

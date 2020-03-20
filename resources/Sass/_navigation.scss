@@ -2,3 +2,73 @@
 // This file contains all styles related to the navigation of the site/application.
 
 /* STYLES GO HERE */
+$nav-black: #2F2F2F;
+
+header {
+    //background-color: rgb(123, 107, 161);
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+
+    &.navigation {
+        //background-color: rgb(128, 177, 135);
+        grid-area: nav;
+        margin: 1rem 0rem;
+        justify-content: flex-start;
+
+        li {
+            margin: 1rem 1rem;
+            text-align: center;
+            font-family: raleway, sans-serif;
+            font-weight: 700;
+            font-style: normal; 
+            font-size: 1.1rem;
+            letter-spacing: 0.2rem;
+            
+            a {
+                color: $nav-black;
+                background-color: white;
+                border: 1px solid white;
+                border-radius: 5px;
+                padding: 0.2rem 0.45rem 0.1rem 0.5rem;
+                text-decoration: none;
+    
+                &.selected {
+                    color: white;
+                    background-color: $nav-black;
+                    border: 1px solid $nav-black;
+                    border-radius: 5px;
+                    padding: 0.2rem 0.45rem 0.1rem 0.5rem;
+    
+                }
+    
+                &:hover {
+                    color: white;
+                    background-color: $nav-black;
+                    border: 1px solid $nav-black;
+                    border-radius: 5px;
+                    padding: 0.2rem 0.45rem 0.1rem 0.5rem;
+                }
+            }
+            
+        }
+    }
+
+    &.social {
+        //background-color: grey;
+        grid-area: social;
+        margin: 1rem 2rem;
+        justify-content: flex-end;
+        
+
+        li {
+            margin: 1rem 1rem;
+        }
+
+    }
+}

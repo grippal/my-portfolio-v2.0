@@ -1,0 +1,83 @@
+// File: _home.scss
+// This file contains all styles related to the home page of the site/application.
+
+/* STYLES GO HERE */
+$nav-black: #2F2F2F;
+
+body {
+    &.home-page {
+        
+        div.home-background {
+            background-color: #1873C9;
+            clip-path: polygon(100% 13%, 9% 100%, 100% 100%);
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+            
+        }
+        section {
+            &.hi {
+                grid-area: hi;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                div.hi {
+                    margin-left: 10rem;
+                    font-family: itc-avant-garde-gothic-pro, sans-serif;
+                    font-weight: 700;
+                    font-style: normal;
+                    font-size: 4rem;
+                    line-height: 1rem;
+                    justify-content: center;
+                }
+            }
+            
+            &.mac {
+                //background-color: rgb(199, 143, 143);
+                grid-area: mac;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                div.mac {
+                    //background-color: rgb(143, 167, 199);
+                    margin-right: 10rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    img {
+                        width: 25rem;
+                        padding: 1rem;
+                    }
+
+                    a {
+                        font-family: raleway, sans-serif;
+                        font-weight: 700;
+                        font-style: normal; 
+                        font-size: 1.8rem;
+                        letter-spacing: 0.2rem;
+
+                        color: $nav-black;
+                        background-color: white;
+                        border: 5px solid $nav-black;
+                        border-radius: 5px;
+                        padding: 0.4rem 3.5rem;
+                        text-decoration: none;
+                        box-shadow: 2px 2px 5px grey;
+
+                        &:hover {
+                            color: white;
+                            background-color: $nav-black;
+                            border: 5px solid white;
+                            border-radius: 5px;
+                            padding: 0.4rem 3.5rem;
+                            text-decoration: none;
+                        }
+                    }
+                }  
+            }
+        }
+    }
+}
